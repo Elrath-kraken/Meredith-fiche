@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fiche Meredith</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Roboto", sans-serif
+        }
+    </style>
+</head>
+
+<body class="w3-theme-d5" id='mort'>
+    <!-- Page Container -->
+    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+        <!-- The Grid -->
+        <div class="w3-row-padding">
+            <!-- Left Column -->
+            <div class="w3-third">
+                <div class="w3-theme-d2 w3-text-white w3-card-4">
+                    <div class="w3-display-container">
+                        <img src="Assets/img/portrait.jpg" style="width:100%" alt="Avatar">
+                        <div class="w3-display-bottomleft w3-container w3-text-white">
+                            <!-- Entrez le nom de votre personnage -->
+                            <h2 id='name'>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="w3-container">
+                        <!-- Entrez vos classes -->
+                        <p><i class="material-icons fa-fw w3-margin-right w3-large w3-text-purple">brightness_3</i><span
+                                id='class1'></span></p>
+                        <p><i class="material-icons fa-fw w3-margin-right w3-large w3-text-purple">brightness_3</i><span
+                                id='class2'></span></p>
+                        <p><i class='fa fa-home fa-fw w3-margin-right w3-large w3-text-purple'></i><span
+                                id='city'></span></p>
+                        <hr>
+
+                        <p class="w3-large"><b><i
+                                    class="fa fa-asterisk fa-fw w3-margin-right w3-text-purple"></i>Skills</b></p>
+                        <div id='w3-half'>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <p><b>Acrobatics</b>
+                                        <div id='acrobatics'></div>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p><b>Animal Handling</b>
+                                        <div id='animal'></div>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p><b>Arcana</b>
+                                        <div id='arcana'></div>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p><b>Athletics</b>
+                                        <div id='athletics'></div>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p><b>Deception</b>
+                                        <div id='deception'></div>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p><b>History</b>
+                                        <div id='history'></div>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p><b>Insight</b>
+                                        <div id='insight'></div>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p id='intim'><b>Intimidation</b>
+                                        <div id='intimidation'></div>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p><b>Investigation</b>
+                                        <div id='investigation'></div>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p><b>Medicine</b>
+                                        <div id='medicine'></div>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p><b>Nature</b>
+                                        <div id='nature'></div>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p><b>Perception</b>
+                                        <div id='perception'></div>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p><b>Performance</b>
+                                        <div id='performance'></div>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p><b>Persuasion</b>
+                                        <div id='persuasion'></div>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p><b>Religion</b>
+                                        <div id='religion'></div>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p><b>Sleight of Hand</b>
+                                        <div id='sleight'></div>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td>
+                                        <p><b>Stealth</b>
+                                        <div id='stealth'></div>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p><b>Survival</b>
+                                        <div id='survival'></div>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <br>
+                    </div>
+                    <br>
+                </div>
+
+                <!-- End Left Column -->
+            </div>
+
+            <!-- Right Column -->
+            <div class="w3-twothird">
+                <div class="w3-theme-d2 w3-text-white w3-card-4">
+                    <div class="w3-container">
+                        <div class="w3-half">
+                            <h2 class="w3-text-white w3-padding-16"><i
+                                    class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Statistiques
+                            </h2>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <p><b>Strength</b>
+                                        <div id='str'></div>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p><b>Dexterity</b>
+                                        <div id='dex'></div>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p><b>Constitution</b>
+                                        <div id='con'></div>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p><b>Inteligence</b>
+                                        <div id='int'></div>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p><b>Wisdom</b>
+                                        <div id='wis'></div>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p><b>Charisma</b>
+                                        <div id='cha'></div>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="w3-half">
+                            <h2 class="w3-text-white w3-padding-16"><i
+                                    class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Saving
+                                Throw
+                            </h2>
+
+                            <table>
+                                <tr>
+                                    <td>
+                                        <p><b>Strength</b>
+                                        <div id='ststr'></div>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p><b>Dexterity</b>
+                                        <div id='stdex'></div>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p><b>Constitution</b>
+                                        <div id='stcon'></div>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p><b>Inteligence</b>
+                                        <div id='stint'></div>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p><b>Wisdom</b>
+                                        <div id='stwis'></div>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p><b>Charisma</b>
+                                        <div id='stcha'></div>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="w3-theme-d2 w3-text-white w3-card-4">
+                        <div class="w3-container">
+                            <div class="w3-half">
+                                <h2 class="w3-text-white w3-padding-16"><i
+                                        class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Combat
+                                </h2>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p><b>Speed</b>
+                                            <div id='speed'></div>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p><b>AC</b>
+                                            <div id='ac'></div>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p><b>Max HP</b>
+                                            <div id='hp'></div>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p><b>Wounds</b>
+                                            <div id='wounds'>0</div>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <label for="userinput">Damage/Healing</label>
+                                <input type="text" name='userinput' id='userinput'>
+                                <button id="plus" class=' w3-btn w3-purple w3-round-large w3-ripple'
+                                    onclick="modhp()">Submit</button>
+                                <!-- <button id="moins" class=' w3-btn w3-purple w3-round-large w3-ripple'
+                                    onclick=" moins()">Moins</button> -->
+
+                                <h2 class="w3-text-white w3-padding-16"><i
+                                        class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Spells
+                                    and Attacks bonus
+                                </h2>
+                                <table>
+                                    <tr>
+                                        <td>Main weapon: <span id='melee1'></span></td>
+                                        <td>Secondary weapon: <span id='melee2'></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Spell attack bonus: <span id='spell'></span></td>
+                                        <td>Spell save dc: <span id='spelldc'></span></td>
+                                    </tr>
+                                </table>
+
+                                <!-- Entrez vos resistances  -->
+                                <h2 class="w3-text-white w3-padding-16"><i
+                                        class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Weakness
+                                </h2>
+                                <p>Aucune</p>
+                                <h2 class="w3-text-white w3-padding-16"><i
+                                        class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Résistances
+                                </h2>
+                                <p>Psychic</p>
+                                <h2 class="w3-text-white w3-padding-16"><i
+                                        class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Immunitées
+                                </h2>
+                                <p>Aucune</p>
+                            </div>
+                            <div class="w3-half">
+                                <h2 class="w3-text-white w3-padding-16"><i
+                                        class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Inventaire
+                                </h2>
+                                <h4>Commun</h4>
+                                <ul>
+                                    <li>Sierra's music box</li>
+                                </ul>
+                                <h4 class='w3-text-green'>Uncommon</h4>
+                                <ul>
+                                    <li>Wand of Attack +1 -
+                                        <span class='w3-text-yellow'>Attuned</span>
+                                    </li>
+                                    <li>Wand of DC +1 - <span class='w3-text-red'>Not Equipped</span></li>
+                                    <li>Saphire of power (lesser)</li>
+                                    <li>Emerald of power (lesser)</li>
+                                    <li>Diamond of power (lesser)</li>
+                                    <li>Ruby of power (lesser)</li>
+                                    <li>Goggles of Identify - <span class='w3-text-red'>Not Equipped</span></li>
+                                    <li>Mage Lense - <span class='w3-text-red'>Not Equipped</span></li>
+                                    <li>Googles of Night Vision</li>
+                                    <li>Bracers of Defense - <span class='w3-text-yellow'>Attuned</span></li>
+                                    <li>Rabbit's Foot</li>
+                                </ul>
+                                <h4 class='w3-text-blue'>Rare</h4>
+                                <ul>
+                                    <li>Ring of protection +2 - <span class='w3-text-yellow'>Attuned</span></li>
+
+                                    <li>Glasses of truth-seeing - <span class='w3-text-red'>Not Equipped</span></li>
+                                    <li>Staff of Abjuration</li>
+                                    <li>Amulet of the owl - <span class='w3-text-red'>Not Equipped</span></li>
+
+                                </ul>
+                                <h4 class='w3-text-purple'>Epic</h4>
+                                <ul>
+                                    <li>Greater Ring of Attunement</li>
+                                    <li>Amulet of the four-handed god -
+                                        <span class='w3-text-yellow'>Attuned</span>
+                                    </li>
+                                    <li>Ring of Reactiveness -
+                                        <span class='w3-text-yellow'>Attuned</span>
+                                    </li>
+                                    <li>Superior Mind Shielding Tiara -
+                                        <span class='w3-text-yellow'>Attuned</span>
+                                    </li>
+                                    <li>Wand of DC +3 -
+                                        <span class='w3-text-red'>Not Equipped</span>
+                                    </li>
+                                    <li>Boots of Dodging, Greater - <span class='w3-text-yellow'>Attuned</span></li>
+                                </ul>
+                                <h4 class='w3-text-red'>Mythic</h4>
+                                <ul>
+                                    <li>Moonsilver Ring</li>
+                                    <li>Robe of the Cosmos
+                                        -
+                                        <span class='w3-text-yellow'>Attuned</span>
+                                    </li>
+                                </ul>
+                                <h4 class='w3-text-orange'>Legendary</h4>
+                                <ul>
+                                    <li>Philosopher's Duty -
+                                        <span class='w3-text-orange'>Legendary Attuned</span>
+                                    </li>
+                                    <li>Soul Prison Grimory -
+                                        <span class='w3-text-orange'>Legendary Attuned</span>
+                                    </li>
+                                </ul>
+
+                                <h4 class='w3-text-yellow'>Gold</h4>
+                                <p>16176 Gold</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-theme-d2 w3-text-white w3-card-4">
+                        <div class="w3-container">
+                            <h2 class="w3-text-white w3-padding-16"><i
+                                    class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Notes
+                            </h2>
+                            <h4 class='w3-text-yellow'>Inventaire de potions et scrolls</h4>
+                            <p> 20x Greater Healing potion (4d4 +4) </p>
+                            <p> 3x Scroll of Healing word (1D4 +4)</p>
+                            <p> 12x Fireball Scroll (8d6 dc17)</p>
+                            <p> 6x Scroll of Steelwind Strike (6d10, 30ft, 5 targets +11 to hit)</p>
+                            <p> 25x scroll of desintegrate</p>
+                            <p> 2x Scroll of Skill Empowerement (Expertise in one skill, 1 hour)</p>
+                            <p> 1x Scroll of mirror image</p>
+                            <p>2 Pilons de poulet</p>
+                            <p>2 Tentacules de kraken</p>
+
+                            <h5 id='xp' class='w3-text-green'></h5>
+                            <h5 id='xpnext' class='w3-text-red'></h5>
+                            <h5 id='xpmissing' class='w3-text-blue'></h5>
+                        </div>
+                    </div>
+                    <div class="w3-theme-d2 w3-text-white w3-card-4">
+                        <div class="w3-container">
+                            <h2 class="w3-text-white w3-padding-16"><i
+                                    class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Dice
+                                Roller
+                            </h2>
+                            <table>
+                                <tr>
+                                    <td><img src="Assets/img/d4.png" alt="d4" class='die' id='rolld4'></td>
+                                    <td><img src="Assets/img/d6.png" alt="d6" class='die' id='rolld6'></td>
+                                    <td><img src="Assets/img/d8.png" alt="d8" class='die' id='rolld8'></td>
+                                    <td><img src="Assets/img/d10.png" alt="d10" class='die' id='rolld10'></td>
+                                    <td><img src="Assets/img/d12.png" alt="d12" class='die' id='rolld12'></td>
+                                    <td><img src="Assets/img/d20.png" alt="d20" class='die' id='rolld20'></td>
+                                    <td><img src="Assets/img/d100.png" alt="d100" class='die' id='rolld100'></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p id='resultd4' class='w3-center'></p>
+                                    </td>
+                                    <td>
+                                        <p id='resultd6' class='w3-center'></p>
+                                    </td>
+                                    <td>
+                                        <p id='resultd8' class='w3-center'></p>
+                                    </td>
+                                    <td>
+                                        <p id='resultd10' class='w3-center'></p>
+                                    </td>
+                                    <td>
+                                        <p id='resultd12' class='w3-center'></p>
+                                    </td>
+                                    <td>
+                                        <p id='resultd20' class='w3-center'></p>
+                                    </td>
+                                    <td>
+                                        <p id='resultd100' class='w3-center'></p>
+                                    </td>
+                                </tr>
+                            </table>
+
+
+                        </div>
+                    </div>
+                    <!-- End Right Column -->
+                </div>
+
+                <!-- End Grid -->
+            </div>
+
+            <!-- End Page Container -->
+        </div>
+
+        <footer class="w3-container w3-purple w3-center w3-margin-top">
+            <p>Copyright Olivier Mc Gee Gauthier 2021</p>
+        </footer>
+
+</body>
+
+</html>
+
+<script src="Assets/JS/main.js"></script>
+</body>
+
+</html>
